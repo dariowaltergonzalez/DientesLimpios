@@ -16,11 +16,10 @@ namespace DientesLimpios.Persistencia
             {
                 options.UseSqlServer("name=DientesLimpiosConnectionString");
 
-                services.AddScoped<IRepositorioConsultorios, RepositorioConsultorios>();
-                services.AddScoped<IUnidadDeTrabajo,UnidadDeTrabajoEFCore>();
-
-
             });
+
+            services.AddScoped<IRepositorioConsultorios, RepositorioConsultorios>();
+            services.AddScoped<IUnidadDeTrabajo, UnidadDeTrabajoEFCore>();
 
             return services;
         }
