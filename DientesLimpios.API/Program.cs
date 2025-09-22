@@ -1,3 +1,4 @@
+using DientesLimpios.API.Middlewares;
 using DientesLimpios.Aplicacion;
 using DientesLimpios.Persistencia;
 
@@ -20,6 +21,8 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
+
+app.UseManejadorExcepciones();
 
 app.UseHttpsRedirection();
 
