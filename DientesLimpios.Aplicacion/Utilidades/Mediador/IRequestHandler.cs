@@ -11,4 +11,11 @@ namespace DientesLimpios.Aplicacion.Utilidades.Mediador
     {
         Task<TResponse> Handle(TRequest request);
     }
+
+    //se corresponse a un caso de uso el cual no retorna nada
+    public interface IRequestHandler<TRequest>
+    where TRequest : IRequest
+    {
+        Task Handle(TRequest request);
+    }
 }

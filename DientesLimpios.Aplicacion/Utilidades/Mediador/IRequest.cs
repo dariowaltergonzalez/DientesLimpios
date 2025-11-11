@@ -10,4 +10,10 @@ namespace DientesLimpios.Aplicacion.Utilidades.Mediador
     {
 
     }
+
+    //se corresponse a un caso de uso el cual no retorna nada
+    public interface IRequest
+    {
+
+    }
 }
